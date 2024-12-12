@@ -64,6 +64,5 @@ spec:
   - protocol: TCP
     port: 8080
     targetPort: 80
-  type: LoadBalancer
-  externalIPs:
-    - 192.168.101.231
+    nodePort: 8080
+  type: NodePort
