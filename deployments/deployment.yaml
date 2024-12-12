@@ -46,8 +46,6 @@ data:
     <body>
         <h1>Welcome to the Custom Nginx Homepage!</h1>
         <p>Deployed with ArgoCD</p>
-        <p>Hello I.CAS-DEVOPS2024</p>
-        <p>Hello Test</p>
     </body>
     </html>
 ---
