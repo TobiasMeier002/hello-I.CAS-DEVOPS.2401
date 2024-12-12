@@ -6,7 +6,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       app: nginx
@@ -41,11 +41,12 @@ data:
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Welcome</title>
+        <title>Welcome I.CAS-DEVOPS2024</title>
     </head>
     <body>
         <h1>Welcome to the Custom Nginx Homepage!</h1>
         <p>Deployed with ArgoCD</p>
+        <p>Hello I.CAS-DEVOPS2024</p>
     </body>
     </html>
 ---
