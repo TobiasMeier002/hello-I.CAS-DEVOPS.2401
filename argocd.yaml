@@ -1,0 +1,10 @@
+project: default
+source:
+  repoURL: https://github.com/TobiasMeier002/hello-I.CAS-DEVOPS.2401
+  path: deployment
+  targetRevision: HEAD
+destination:
+  server: https://kubernetes.default.svc
+  namespace: hello-cas
+syncPolicy:
+  automated: {}
