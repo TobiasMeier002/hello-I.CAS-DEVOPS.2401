@@ -1,10 +1,18 @@
-project: default
-source:
-  repoURL: https://github.com/TobiasMeier002/hello-I.CAS-DEVOPS.2401
-  path: deployment
-  targetRevision: HEAD
-destination:
-  server: https://kubernetes.default.svc
-  namespace: hello-cas
-syncPolicy:
-  automated: {}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-cas
+spec:
+  destination:
+    namespace: hello-cas
+    server: https://kubernetes.default.svc
+  source:
+    path: deployments
+    repoURL: https://github.com/TobiasMeier002/hello-I.CAS-DEVOPS.2401
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

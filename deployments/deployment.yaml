@@ -39,7 +39,7 @@ metadata:
   name: nginx-homepage-config
   labels:
     app: nginx
-  namespace: default
+  namespace: hello-cas
 
 data:
   index.html: |
