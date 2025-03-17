@@ -81,7 +81,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.middlewares: default-redirect-https@kubernetescrd #Automatischer Redirect auf HTTPS
 spec:
   rules:
-    - host: yaapp.app.topadata.ch #Domain Name *.app.topadata.ch
+    - host: blablabla.app.topadata.ch #Domain Name *.app.topadata.ch
       http:
         paths:
           - path: /
@@ -94,4 +94,4 @@ spec:
   tls:
     - secretName: nginx-tls
       hosts:
-        - yaapp.app.topadata.ch # Domain Name *.app.topadata.ch
+        - blablabla.app.topadata.ch # Domain Name *.app.topadata.ch
