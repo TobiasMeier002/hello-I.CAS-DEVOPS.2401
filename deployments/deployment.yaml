@@ -94,5 +94,4 @@ spec:
   tls:
     - secretName: nginx-tls
       hosts:
-        - blablabla.app.topadata.ch # Domain Name *.app.topadata.ch
         - hello-cas.app.topadata.ch # Domain Name *.app.topadata.ch
